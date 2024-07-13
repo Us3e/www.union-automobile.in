@@ -1,0 +1,361 @@
+  Skip to c
+
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+      <link rel="stylesheet" href="swami.css" />
+      <title>dropdown Menu</title>
+    </head>
+    <body>
+      
+    <nav class="navbar">
+      <div class="logo">Union Automobile.</div>
+      <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Product</a>
+          <a href="#">services</a>
+          <a href="#">Contact</a>
+      </div>
+      <div class="search-bar">
+          <input type="text" placeholder="Search">
+          
+      </div>
+  </nav>
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automatic Slideshow</title>
+  <style>
+    /* Container for the slideshow */
+    .slideshow-container {
+      max-width: 100%;
+      position: relative;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    /* Make images responsive */
+    .slideshow-container img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Hide slides by default */
+    .slide {
+      display: none;
+    }
+
+    /* Display active slide */
+    .slide.active {
+      display: block;
+    }
+
+    /* Style the dots */
+    .dots {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* Style individual dot */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 5px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Active dot */
+    .dot.active {
+      background-color: #717171;
+    }
+  </style>
+  </head>
+  <body>
+
+  <!-- Slideshow Container -->
+  <div class="slideshow-container">
+    <!-- Slides -->
+    <div class="slide fade active">
+      <img src="png.png" alt="Slide 1">
+    </div>
+
+    <div class="slide fade">
+      <img src="CAR PNG.jpg" alt="Slide 2">
+    </div>
+
+    <div class="slide fade">
+      <img src="PRANAY NAGARE.jpg" alt="Slide 3">
+    </div>
+
+    <!-- Dots -->
+    <div class="dots">
+      <span class="dot active" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </div>
+
+  <!-- JavaScript for slideshow functionality -->
+  <script>
+    var slideIndex = 0;
+    showSlides(); // Start slideshow
+
+    // Function to display slides
+    function showSlides() {
+      var slides = document.getElementsByClassName("slide");
+      var dots = document.getElementsByClassName("dot");
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; // Hide all slides
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { // If at end, start from beginning
+        slideIndex = 1;
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", ""); // Remove active class from dots
+      }
+      slides[slideIndex-1].style.display = "block"; // Display current slide
+      dots[slideIndex-1].className += " active"; // Highlight current dot
+      setTimeout(showSlides, 2000); // Change slide every 2 seconds
+    }
+
+    // Function to switch to a specific slide
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+  </script>
+
+  </body>
+  </html>
+
+
+  <section class="about-section">
+    <img src="MAYANK.PNG" alt="About Us Image" class="about-image">
+    <div class="about-content">
+        <h2>About Us</h2>
+        <p>Financial loan available here---..</p>
+        <p>All Financial loan...</p>
+        <p>1. Bajaj Financial limited.</p>
+        <p>2. Tata capital services ltd.</p>
+        <p>3. Aditya birla Financial ltd.</p>
+        <p>4. Mahindra Financial services limited.</p>
+    </div>
+  </section>
+
+  <section>
+  <h3>Product.</h3>
+  </section>
+
+
+
+    
+  <div class="wrapper">
+    <div class="container">
+        <input type="radio" name="slide" id="c1" checked>
+        <label for="c1" class="card">
+            <div class="row">
+                <div class="icon">1</div>
+                <div class="description">
+                    <h4>Honda Bikes.r</h4>
+                    <p>All Bikes available <here-- class=""></here--></p>
+                </div>
+            </div>
+        </label>
+        <input type="radio" name="slide" id="c2" >
+        <label for="c2" class="card">
+            <div class="row">
+                <div class="icon">2</div>
+                <div class="description">
+                    <h4>Jupiter.</h4>
+                    <p>ALL types  active available here-- /p>
+                </div>
+            </div>
+        </label>
+        <input type="radio" name="slide" id="c3" >
+        <label for="c3" class="card">
+            <div class="row">
+                <div class="icon">3</div>
+                <div class="description">
+                    <h4>Activa </h4>
+                    <p>All types Activa available here--.</p>
+                </div>
+            </div>
+        </label>
+        <input type="radio" name="slide" id="c4" >
+        <label for="c4" class="card">
+            <div class="row">
+                <div class="icon">4</div>
+                <div class="description">
+                    <h4>Maruti Ertiga CAR.</h4>
+                    <p>All types car available <head></head></p>
+                </div>
+            </div>
+        </label>
+    </div>
+  </div>
+
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three Card Overlay Effect</title>
+  <style>
+      * {
+          box-sizing: border-box;
+      }
+
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f0f0f0;
+      }
+
+      h3 {
+          text-align: center;
+          font-size: 50px;
+      }
+
+      .container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+      }
+
+      .card {
+          position: relative;
+          width: 400px;
+          height: 400px;
+          margin: 0 10px;
+          overflow: hidden;
+      }
+
+      .card img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.3s ease;
+      }
+
+      .card:hover img {
+          transform: scale(1.1);
+      }
+
+      .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          color: #fff;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+      }
+
+      .card:hover .overlay {
+          opacity: 1;
+      }
+
+      .overlay h2 {
+          margin-top: 0;
+          text-align: center;
+      }
+
+      @media screen and (max-width: 768px) {
+          .container {
+              flex-direction: column;
+          }
+          .card {
+              margin: 10px 0;
+          }
+      }
+  </style>
+  </head>
+  <body>
+
+  <h3>services</h3>
+
+  <div class="container">
+      <div class="card">
+          <img src="loan.png" alt="Card Image">
+          <div class="overlay">
+              <h2>ALK financial loan available here--</h2>
+              <p></p>
+          </div>
+      </div>
+      <div class="card">
+          <img src="hr.webp" alt="Card Image">
+          <div class="overlay">
+              <h2>Health insurance available here-</h2>
+              <p>-</p>
+          </div>
+      </div>
+      <div class="card">
+          <img src="DRP.PNG.jpg" alt="Card Image">
+          <div class="overlay">
+              <h2>2,3,4 wheeler will meet by removing license.</h2>
+              <p></p>
+          </div>
+      </div>
+  </div>
+
+
+
+
+  <div class="container">
+      <h1>Contact Us</h1>
+      <!-- Your contact form or other contact information can go here -->
+    </div>
+
+    <div class="container">
+      <div class="contact-info">
+        <h1</h1>
+        <!-- Your contact form or other contact information can go here -->
+      </div>
+      <div class="container">
+        <h1>Location Map</h1>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d241093.11137158106!2d72.9049572!3d19.2353508!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b92bf490185f%3A0x2143c7be8d4da4eb!2sUnion%20Automobiles!5e0!3m2!1sen!2sin!4v1711799805323!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        
+        <div class="contact-info">
+          <h2>Contact Information</h2>
+          <address>
+            <div class="location">
+              <span>Address:</span>
+              <p>shop nbo 3 near by the kalwa prabhaga samiti juna belapur road kalwa/thane.</p>
+            </div>
+            <div class="email">
+              <span>Email:</span>
+              <p>unionautomobile2016@gmail.com</p>
+              <div class="Phone no">
+              <span>Phone No</span>
+              <p>9892973865.</p>
+              </div>
+
+            
+        </div>
+      </div>
+    </div>
+
+  </body>
+  </html>
